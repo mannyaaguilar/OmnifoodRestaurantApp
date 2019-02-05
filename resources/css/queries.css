@@ -1,0 +1,302 @@
+
+/*BIG TABLET TO 1200px (widths smaller than the 1140px row)**************************************************************/
+@media only screen and (max-width: 1200px){
+    
+    /*Reduces padding and spaces in between the Large Text in the header*/
+    .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+    }
+    
+    /*Reduces padding for rows in the header*/
+    .row { padding: 0 2%; }     
+}
+
+/*SMALL PHONES TO SMALL TABLETS: FROM 768 TO 1023px*************************************************************************/
+@media only screen and (max-width: 1023px){
+    
+    /*Reduces body font-size*/
+    body { font-size: 18px; }
+    
+    /*Reduces padding between font*/
+    section { padding: 60px 0;}
+    
+     /*Adjust the margins of the blurb above the features in section features section*/
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    /*Adjust the spacing in the How it Works Text*/
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .works-step { margin-bottom: 40px; }
+    .works-step:last-of-type { margin-bottom: 60px; }
+    
+    /*Adjust phone size and spacing in How it Works section*/
+    .app-screen {
+        width: 40%;
+        margin-left: 210px;/*Added to center phone pic*/
+        padding-bottom: 20px;
+    }
+    
+    /*Adjust the margins and icon size width in the cities*/
+    .icon-small { width: 10px;
+                  margin-right: 5px;}
+    
+    /*Adjust font-size in cities info*/
+    .city-feature { font-size: 80%; }
+    
+    /*Adjust the width and margins of the plan boxes to fit the text better*/
+    .plan-box {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    /*Adjust the font size of the prices in the plan box*/
+    .plan-price { font-size: 250%; }
+    
+    /*Adjust the text "/ meal" text next to the prices in plan box*/
+    .plan-price span {
+    font-size: 40%;
+    font-weight: 300;
+    }
+
+    /*Adjust the text for the blurb under the prices in the plan box*/
+    .plan-price-meal { font-size: 85%; }
+    
+    /*Adjusts the text in the meal plan box*/
+    .plan-box div ul li { font-size: 90%; }
+    
+    /*Adjusts the width of the contact form*/
+    .contact-form { width: 80%; }
+    
+    /*Adjust the footer-nav and social-links*/
+    .footer-nav li, 
+    .social-links li {
+    display: inline-block;
+    margin-right: 5px;
+    }
+    
+    /*Adjust logo size to fit screen for Small Phones and Tablets (Responsiveness)*/
+    .logo {
+        height: 115px;
+        width: auto;
+        float: left;
+        margin-top: 10px;
+    }
+    
+}
+
+/*SMALL TABLET TO BIG TABLET: FROM 481 TO 767px*************************************************************************/
+@media only screen and (max-width: 767px){
+    
+    /*Reduces body font-size*/
+    body { font-size: 16px; }
+    
+    /*Reduces padding between font*/
+    section { padding: 30px 0; }
+    
+    /*Reduces padding and spaces in between the Large Text in the header*/
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    
+    /*Define the width of all columns as 100%, which means columns will no longer be side-by-side, but stacked, instead, on top of each other.*/
+    .col { margin: 0 0 4% 0; /*Fixes all columns so that they fall in line at the same point vertically*/ 
+           width: 100%; }
+        
+    /*Hide main nav-bar in heading section*/
+    .main-nav { display: none; }
+    
+    /*mobile-nav icon will appear to replace the main-nav*/
+    .mobile-nav-icon { display: inline-block; }
+    
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+        }
+    
+    /*main-nav links will display as blocks (stacked on top of each other) when screen width reaches 480px*/
+    .main-nav li {
+        display: block;
+        padding: 10px /*Add space in between nav links*/
+    }
+    
+    /*Removes border and orange underlining from nav links*/
+    main-nav li a:link,
+    main-nav li a:visited { 
+        display: block;
+        border: 0;
+        border-bottom: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    /*Removes border and orange underlining from nav links when screen size reduced.*/
+    .main-nav li a:link,
+    .main-nav li a:visited,
+    .main-nav li a:hover,
+    .main-nav li a:active {        
+        border-bottom: 0;
+        padding: 10px 0;
+    }
+    
+    /*Sticky-nav*/
+    
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; } 
+    
+    /*Make mobile icon black in sticky-nav*/
+    .sticky .mobile-nav-icon i { color: #555; }
+    
+    /*Adjust the padding of mobile-nav-icon*/
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    
+
+    /*Adjust the margins of the blurb above the features in section features section*/
+    .long-copy {
+    width: 100%;
+    margin-left: 0%;
+    }
+    
+    /*Adjust the font size of all h1 elements*/
+    h1 { font-size: 180% }
+    
+    /*Adjust the font size of all h2 elements*/
+    h2 { font-size: 150% }
+    
+    /*Adjust the spacing in the How it Works Text*/    
+    .works-step { margin-bottom: 20px; }
+    .works-step:last-of-type { margin-bottom: 20px; }
+    
+    /*Adjust font-size and whitespace in text of 1, 2, 3 steps in How it Works section*/
+    .works-step div {
+        height: 40px;
+        width: 40px;    
+        margin-right: 15px;        
+        padding: 4px;
+        font-size: 120%;
+    }
+    
+    /*Adjust phone size and spacing in How it Works section*/
+    .app-screen {
+        width: 30%;
+        margin-left: 155px;/*Added to center phone pic*/        
+    }
+    
+    /*Adjusts margins for the App Store images in the How it Works section*/    
+    .btn-app img {
+    height: 30px;
+    width: auto;
+    margin-left: 30px;
+    }
+    
+     /*Adjust the margins and checkmark icons size width in the meal plans*/
+    .icon-small { width: 10px;
+                  margin-right: 5px;}
+    
+    /*Adjust font-size in cities info*/
+    .city-feature { font-size: 90%; }
+}
+
+/*SMALL PHONES: FROM 0 TO 480px*******************************************************************************************/
+@media only screen and (max-width: 480px){
+    
+    /*Reduces body font-size*/
+    body { font-size: 18px; }
+    
+    /*section {padding: 3-px 0;}*/
+    section { padding: 25px 0; } 
+    
+    /*Adjusts width of contact form to 100%*/
+    .contact-form { width: 100%; }
+    
+    /*main-nav links will display as blocks (stacked on top of each other) when screen width reaches 480px*/
+    .main-nav li {
+        display: block;
+        padding: 10px /*Add space in between nav links*/
+    }
+    
+    /*Removes border and orange underlining from nav links*/
+    .main-nav li a:link,
+    .main-nav li a:visited,
+    .main-nav li a:hover,
+    .main-nav li a:active {        
+        border-bottom: 0;
+        padding: 10px 0;
+    }
+    
+    /*Adjust the margins of the blurb above the features in section features section*/
+    .long-copy {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 15%;
+    font-size: 90%
+    }
+    
+    /*Adjust logo size to fit screen for Small Phones and Tablets (Responsiveness)*/
+    .logo {
+    height: 115px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+    }
+    
+    /*Hide main nav-bar in heading section*/
+    .main-nav { display: none; }
+    
+    /*Adjust phone size and spacing in How it Works section*/
+    .app-screen {
+    width: 40%;
+    margin-left: 125px;/*Added to center pic*/    
+    }
+    
+    /*Adjust font-size and whitespace in text of 1, 2, 3 steps in How it Works section*/
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        padding: 7px;
+        font-size: 100%;                
+    }
+    /*Sets the margins for the boxes in the How it Works section, Needed b/c columns are now stacked and need spacing in between*/
+    .works-step { margin-bottom: 20px }
+    .works-step:last-of-type { margin-bottom: 20px; }
+    
+    /*Clean up footer to evenly space footer-nav and social-links*/
+    footer .row {
+        height: 60px;
+        width: 500px
+    }
+    
+    div .footer-nav {
+        margin-left: 0;
+    }
+    
+    div .social-links {
+        padding-bottom: 0px;
+        margin-right: 245px;  
+    }
+    
+    .footer-nav li, 
+    .social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    }
+    
+    /*Center footer*/
+    footer p { margin-right: 135px}
+    
+    /*Adjusts margins for the App Store images in the How it Works section*/    
+    .btn-app img {
+    height: 50px;
+    width: auto;
+    margin-left: 37px;
+    }
+    
+    
+  
+}
+
